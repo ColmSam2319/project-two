@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css">
 
 
     <title>Paper Rock Scissors Lizard Spock</title>
@@ -42,29 +42,34 @@
 
     <!-- game area-->
     <div class="game-area">
-        <div class="player-controls">
+            <div id="rock" class="pick">
             <button data-type="rock" class="btn btn--big btn--purple">
                 <i class="fa-regular fa-hand-back-fist" title="Rock icon"></i>Rock
             </button>
-
-            <button data-type="paper" class="btn btn--big btn--blue">
+            </div>
+            <div id="paper"class="pick">
+            <button  data-type="paper" class="btn btn--big btn--blue">
                 <i class="fa-regular fa-hand" title="Paper icon"></i>Paper
             </button>
+            </div>
 
-            <button data-type="scissors" class="btn btn--big btn--orange">
+            <div id="scissors"class="pick">
+            <button  data-type="scissors" class="btn btn--big btn--orange">
                 <i class="fa-regular fa-hand-scissors" title="Scissors icon"></i>Scissor
             </button>
-
-            <button data-type="lizard" class="btn btn--big btn--green">
+            </div>
+            <div id="lizard"class="pick">
+            <button  data-type="lizard" class="btn btn--big btn--green">
                 <i class="fa-regular fa-hand-lizard" title="Lizard icon"></i>Lizard
             </button>
-
-            <button data-type="spock" class="btn btn--big btn--red">
+            </div>
+            <div id="spock"class="pick">
+            <button  data-type="spock" class="btn btn--big btn--red">
                 <i class="fa-regular fa-hand-spock" title="Spock icon"></i>Spock 
             </button>
-        </div>
-        <div>
+            </div>
+    </div>
 
-        </div>
+        <link rel="stylesheet" href="/assets/java/script.js">
 </body>
 </html>
