@@ -1,0 +1,171 @@
+
+body {
+    background-color: white;
+    font-family: "Amatic SC", sans-serif;
+    color: #445361;
+    text-align: center;
+}
+
+/* --------- Heading */
+
+.title {
+    text-align: center;
+    font-size: 4.0rem;
+}
+/*---rules area----*/ 
+
+#rules-area{
+    font-family: "Amatic SC", sans-serif;
+    border: solid 2px;
+    display: inline-block;
+    width: 30%;
+}
+
+.rules-heading{
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    
+}
+#rules-area p{
+    font-size: 1.5rem;
+}
+/*score area and headings*/
+
+.score-area {
+    text-align: center;
+    font-size: 3rem;
+}
+ .points {
+    border: solid 2px;
+    display: inline-block;
+    width: 30%;
+}
+/* h2 score headings*/
+
+.player{
+    display: inline-block ;
+    font-size: 4rem;
+    margin-right: 20px;
+    width: 20%;
+}
+.computer {
+    display: inline-block; 
+    font-size: 4rem;
+    margin-left: 20px;
+    width: 20%;
+}
+#player-score{
+    font-size: 4rem;
+    font-weight: bold;
+}
+#computer-score{
+    font-size: 4rem;
+}
+/* Game layout */
+
+.game-area {
+    background-color: #e6ecf0aa;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50vh;
+    max-height: 450px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+/* styling for buttons taken from love maths project*/
+
+.btn {
+    width: 220px;
+    height: 60px;
+    font-family: "Amatic SC", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid;
+    width: 150px;
+    height: 150px;
+    font-size: 5.4rem;
+    margin: 0 40px;
+    transition: all 0.5s;   
+   word-spacing: 5rem;
+   text-align: center;
+}
+
+.btn--big::after{
+    
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    left: -0.5em;
+}
+
+.btn--purple {
+    border-color: purple;
+    color: purple;
+}
+
+.btn--purple:active,
+.btn--purple:hover {
+    background-color: rgb(183, 34, 183);
+    color: grey;
+}
+
+.btn--blue {
+    border-color: blue;
+    color: blue;
+}
+
+.btn--blue:active,
+.btn--blue:hover {
+    background-color: darkblue;
+    color: grey;
+}
+
+.btn--orange {
+    border-color: orange;
+    color: orange;
+}
+
+.btn--orange:active,
+.btn--orange:hover {
+    background-color: darkorange;
+    color: grey;
+}
+
+.btn--red {
+    border-color: red;
+    color: red;
+}
+
+.btn--red:active,
+.btn--red:hover {
+    background-color: darkred;
+    color: grey;
+}
+
+.btn--green {
+    border-color: green;
+    color: green;
+}
+
+.btn--green:active,
+.btn--green:hover {
+    background-color: darkgreen;
+    color: grey;
+}
+
+

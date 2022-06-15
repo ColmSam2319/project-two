@@ -20,7 +20,15 @@
 <body>
     <h1 class="title"> Paper Rock Scissors Lizard Spock
     </h1>
-
+    <!--rules area-->
+    <div id="rules-area">
+        <h2 class="rules-heading">Rules</h2>
+            <P>Rock beats Scissors and Lizard. Scissors beats Paper and Lizard</p>
+            <p>Paper beats Rock and Spock. Lizard beats Paper and Spock</p>
+            <p>Spock beats Rock and Scissors</p>
+            <p>First to 10 wins!</p>
+        
+    </div>
     <!-- Score area for points and name tags -->
     <div class="score-area">
 
@@ -35,43 +43,28 @@
     <!-- game area-->
     <div class="game-area">
         <div class="player-controls">
-            <button data-type="rock" class="btn btn--big btn--gray">
-                <i class="fa-regular fa-hand-back-fist" title="Rock icon"></i>
+            <button data-type="rock" class="btn btn--big btn--purple">
+                <i class="fa-regular fa-hand-back-fist" title="Rock icon"></i>Rock
             </button>
+
             <button data-type="paper" class="btn btn--big btn--blue">
-                <i class="fa-regular fa-hand" title="Paper icon"></i>
+                <i class="fa-regular fa-hand" title="Paper icon"></i>Paper
             </button>
+
             <button data-type="scissors" class="btn btn--big btn--orange">
-                <i class="fa-regular fa-hand-scissors" title="Scissors icon"></i>
+                <i class="fa-regular fa-hand-scissors" title="Scissors icon"></i>Scissor
             </button>
+
             <button data-type="lizard" class="btn btn--big btn--green">
-                <i class="fa-regular fa-hand-lizard" title="Lizard icon"></i>
+                <i class="fa-regular fa-hand-lizard" title="Lizard icon"></i>Lizard
+            </button>
+
             <button data-type="spock" class="btn btn--big btn--red">
-                <i class="fa-regular fa-hand-spock" title="Spock icon"></i> 
+                <i class="fa-regular fa-hand-spock" title="Spock icon"></i>Spock 
             </button>
         </div>
-        <div class="score-area">
-            <p class="scores">Correct Answers <span id="score">0</span></p>
-            <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <div>
+
         </div>
 </body>
-</html>
-
-
-
-<body>
-    
-
-    
-        
-       
-
-    <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-    </div>
-
-    <script src="assets/js/script.js"></script>
-</body>
-
 </html>
