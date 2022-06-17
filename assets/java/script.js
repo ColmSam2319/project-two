@@ -31,3 +31,41 @@ function lost(playerChoice, computerChoice){
 }
 function draw(playerChoice, computerChoice){
 }
+
+/* game java*/
+
+function game(playerChoice){
+    const computerChoice = getComputerChoice();
+    switch(playerChoice + computerChoice){
+        case "rockscissors":
+        case "rocklizard":
+        case "paperspock":
+        case "paperrock":
+        case "scissorslizard":
+        case "scissorspaper":
+        case "lizardpaper":
+        case "lizardspock":
+        case "spockrock":
+        case "spockscissors":
+            win(playerChoice, computerChoice);
+            break;
+            case "rockpaper":
+            case "rockspock":
+            case "paperscissors":
+            case "paperlizard":
+            case "lizardscissors":
+            case "lizardrock":
+            case "scissorsspock":
+            case "spocklizard":
+                localStorage(playerChoice, computerChoice);
+                break;
+                case "rockrock":
+                case "paperpaper":
+                case "scissorsscissors":
+                case "lizardlizard":
+                case "spockspock":
+                    draw(playerChoice, computerChoice);
+                    break;             
+    }
+    endGame()
+}
