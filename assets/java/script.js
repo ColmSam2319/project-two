@@ -16,7 +16,7 @@ let computerScore = 0;
 
 function getComputerChoice(){
     const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock',];
-    const randomChoices = Math.floor(Math.random()*choices.length);
+    const randomNumber = Math.floor(Math.random()*choices.length);
     return choices[randomNumber]
 }
 (getComputerChoice());
@@ -25,11 +25,20 @@ function getComputerChoice(){
 
 function win(playerChoice, computerChoice){
     playerScore++;
+    playerScore_span.innerHTML = playerScore;
+    computerScore_span.innerHTML = computerScore;
+    results_div.innerHTML = 'player wins';
 }
-function lost(playerChoice, computerChoice){
+function lose(playerChoice, computerChoice){
     computerScore++;
+    playerScore_span.innerHTML = playerScore;
+    computerScore_span.innerHTML = computerScore;
+    results_div.innerHTML = 'player loses';
 }
 function draw(playerChoice, computerChoice){
+    playerScore_span.innerHTML = playerScore;
+    computerScore_span.innerHTML = computerScore;
+    results_div.innerHTML = 'draw';
 }
 
 /* game java*/
@@ -57,7 +66,7 @@ function game(playerChoice){
             case "lizardrock":
             case "scissorsspock":
             case "spocklizard":
-                localStorage(playerChoice, computerChoice);
+                lose(playerChoice, computerChoice);
                 break;
                 case "rockrock":
                 case "paperpaper":
@@ -68,4 +77,34 @@ function game(playerChoice){
                     break;             
     }
     endGame()
+}
+
+/*eventlisteners for the buttons*/
+function main(){
+    document.getElementsByTagName('button')[0].addEventListener('click',() => game ("rock"));
+    document.getElementsByTagName('button')[1].addEventListener('click',() => game ("paper"));
+    document.getElementsByTagName('button')[2].addEventListener('click',() => game ("scissors"));
+    document.getElementsByTagName('button')[3].addEventListener('click',() => game ("lizard"));
+    document.getElementsByTagName('button')[4].addEventListener('click',() => game ("spock"));
+
+}
+
+main();
+function endGame(){
+    if(playerScore === 5){
+        playerWin();
+        playerScore = 0;
+        computerScore = 0;
+    }
+    if(computerScore === 5){
+        compWin();
+        playerScore = 0;
+        computerScore = 0;
+    }
+}
+function compWin(){
+
+}
+function playerWin(){
+
 }
