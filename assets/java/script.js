@@ -27,18 +27,18 @@ function win(playerChoice, computerChoice){
     playerScore++;
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
-    results_div.innerHTML = 'player wins';
+    results_div.innerHTML = 'Player wins, Computer looses';
 }
 function lose(playerChoice, computerChoice){
     computerScore++;
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
-    results_div.innerHTML = 'player loses';
+    results_div.innerHTML = 'Player loses, Computer wins';
 }
 function draw(playerChoice, computerChoice){
     playerScore_span.innerHTML = playerScore;
     computerScore_span.innerHTML = computerScore;
-    results_div.innerHTML = 'draw';
+    results_div.innerHTML = 'Its a draw';
 }
 
 /* game java*/
@@ -95,15 +95,17 @@ function endGame(){
         playerWin();
         playerScore = 0;
         computerScore = 0;
+        results_div.innerHTML = 'You have defeated the computer well done';
     }
     if(computerScore === 5){
         compWin();
         playerScore = 0;
         computerScore = 0;
+        results_div.innerHTML = 'You have lost to the computer your shame must be great';
     }
 }
 function compWin(){
-
+   
 }
 function playerWin(){
 

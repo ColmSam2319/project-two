@@ -87,6 +87,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: white;
+    cursor: pointer;
 }
 
 .btn:focus {
@@ -122,8 +123,11 @@ body {
 
 .btn--purple:active,
 .btn--purple:hover {
-    background-color: rgb(183, 34, 183);
-    color: grey;
+    background-color: rgb(239, 123, 239);
+    color: white;
+    text-decoration-color: aqua;
+    transform: scale(1.2);
+    
 }
 
 .btn--blue {
@@ -133,8 +137,9 @@ body {
 
 .btn--blue:active,
 .btn--blue:hover {
-    background-color: darkblue;
-    color: grey;
+    background-color: rgb(171, 171, 246);
+    color: white;
+    transform: scale(1.2);
 }
 
 .btn--orange {
@@ -145,7 +150,8 @@ body {
 .btn--orange:active,
 .btn--orange:hover {
     background-color: darkorange;
-    color: grey;
+    color: white;
+    transform: scale(1.2);
 }
 
 .btn--red {
@@ -156,7 +162,8 @@ body {
 .btn--red:active,
 .btn--red:hover {
     background-color: darkred;
-    color: grey;
+    color: white;
+    transform: scale(1.2);
 }
 
 .btn--green {
@@ -166,8 +173,10 @@ body {
 
 .btn--green:active,
 .btn--green:hover {
-    background-color: darkgreen;
-    color: grey;
+    background-color: rgb(181, 246, 181);
+    color: white;
+    transform: scale(1.2);
+    
 }
 
 
