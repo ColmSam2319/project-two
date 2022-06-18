@@ -1,108 +1,255 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ROCK PAPER SCISSORS LIZARD SPOCK
 
-Welcome ColmSam2319,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# The purpose with this projec
 
-## Gitpod Reminders
+This website is the first of five projects that needs to be completed in order to receive a diploma in Software Development from The Code Institute.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Requirements for the project is that the website has to be static and responsive using HTML5 and CSS3.
 
-`python3 -m http.server`
+A live version of the project can be found here - 
+# Table of contents
++ [UX](#ux "UX")
+    + [Users](#users)
+    + [Requirements](#requirements)
+    + [Design](#design)
+     + [Fonts](#fonts)
+     + [Icons](#icons)
+    + [Colours](#colours)
+ + [Features](#features)
+    + [Existing Features](#existing-features)
+    + [Future Feature](#future-features)
+ + [Technologies Used](#technologies-used)
+    + [Languages](#languages)
+    + [Libraries and Frameworks](#libraries-and-frameworks)
+    + [Tools](#tools)
+ + [Testing](#testing)
+    + [Additional Testing](#aditional-testing)
+    + [Unfixed Bugs](#unfixed-bugs)
++ [Deployment](#deployment)
+    + [GitHub Pages](#github-pages)
++ [Credits](#credits)
+## UX
 
-A blue button should appear to click: _Make Public_,
+### Users
+- player should find the game fun.
+- The game should be easy to operate.
+- The game should work without any faults.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Requirements
 
-A blue button should appear to click: _Make Public_,
+This project requires me to build an interactive front-end site. The site will respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals.
 
-Another blue button should appear to click: _Open Browser_.
+Required technologies: HTML, CSS, JavaScript
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Design
 
-To log into the Heroku toolbelt CLI:
+As this is my first time using javascript I have based the design off the  ”Love Maths” - project. The code from some of that project has been used in my project and has been noted in the css additionaly I have used code from online sources and javascript & jquery by Jon Duckett when developing the design for this project.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+My aim has been to create a website that allows users to simply play the game without alot of distraction.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
 
-------
+#### Font
 
-## Release History
+The Google Font Amatic SC was chosen as the main font with a fallback of Sans-Serif. Font weights of bold 800 has been used on the body of website.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### icons
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The icons used for the player selection where taken from https://fontawesome.com/
+ - Rock https://fontawesome.com/icons/hand-fist?s=solid
+ - Paper https://fontawesome.com/icons/hand?s=solid
+ - Scissors https://fontawesome.com/icons/hand-scissors?s=solid
+ - Lizard https://fontawesome.com/icons/hand-lizard?s=solid
+ - Spock https://fontawesome.com/icons/hand-spock?s=solid
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+#### colours
+I drew inspiration from different youtube videos for the colour selection for the website the majoirty of the colours selected were primary colours that I then used the pop up color board in css to find appropiate colours to suit the different icons.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Features 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The  website is a single page website that consists of the following sections:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+ - Title
+ - Rules Area
+ - Score Area
+ - Game Area
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Existing Features
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+#### Title
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+  - the title is a h1 element that has been centred and the text styled with a font of Amatic SC and the font size increased to 4.0rem to give a very simple but effective title.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+![title](/assets/images/Title.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+#### Rules Section
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  - The rules for the game are placed in a  inline block with a solid 2px border the font is set to Amatic SC.
+  
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![rules-section](/assets/images/rules-section.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+#### Score area
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+  - The score area provides the user with a visual results board that shows the result of each of the five rounds at the end of each round the score area will notify the player if it was a win loss or draw with the computer as seen in image 1,2,3 below. At the end of the game the player is notified of the winner or looser of the game as seen in image 4 and 5 below 
 
-------
+ Player wins round - Image 1
 
-## FAQ about the uptime script
+![Player wins round](/assets/images/result-round-player-win.png)
 
-**Why have you added this script?**
+Computer wins round - Image 2
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![Computer wins round](/assets/images/result-round-computer-win.png)
 
-**How will this affect me?**
+The round is a draw - Image 3
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![The round is a draw](/assets/images/results-round-draw.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Game Winner Player - Image 4
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![Game Winner Player](/assets/images/result-text-win.png)
 
-**So….?**
+Game Winner Computer - Image 5
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Game Winner Computer](/assets/images/result-text-loss.png)
 
-**Can I opt out?**
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+#### Game Area
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Game area](/assets/images/game-area.png)
+- the Buttons for the game area were taken from font awesome https://fontawesome.com/
+- to make the buttons stand out they will enlarge when hovered over.
+- the colour of the icon will also change when hovered or clicked on.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Features Left to Implement
 
-**Anything more?**
+- Later versions of this project will contain a improved method of displaying the results of the round as well as edditing the position and css styling of the page to make it more modern. The java script will be improved to include a pop up celebration notification when the player wins.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Technologies used
 
----
+### Language
+- [HTML](https://en.wikipedia.org/wiki/HTML "html")
+- [CSS](https://en.wikipedia.org/wiki/CSS "css")
+- [JavaScript](http://en.wikipedia.org/wiki/JavaScript "JavaScript")
 
-Happy coding!
+### Libraries & Framework
+
+- [Google Fonts](https://fonts.google.com/ "Google Fonts")
+- [Font Awesome library](https://fontawesome.com/ "Font Awesome")
+
+### Tools
+
+- [GitHub](https://github.com/ "GitHub")
+- [Gitpod](https://www.gitpod.io/ "Gitpod")
+- [W3C HTML Validation Service](https://validator.w3.org/ "W3C HTML")
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/ "W3C CSS")
+
+\
+&nbsp;
+[Back to Top](#table-of-contents)
+\
+&nbsp;
+## Testing 
+
+Test of functionality and appearance of the website has have been dealt with thru out all stages of the development phase.
+
+Test has been conducted using Google Chrome, Mozilla Firefox and Safari. Testing different devices and screen resolutions has been conducted using Google DevTools.
+
+Listed is the main issues discovered.
+
+1. Top menu disappears even though its fixed.
+ - Solution: Had to use z-index to keep the menu on top of all sections and elements, value set to 20
+2. Data sent from contact form was not correct when tested towards a form-dump site (https://jkorpela.fi/cgi-bin/echo.cgi).
+ - Solution: The name attribute in the input tags were not correct.
+3. Text alignment in input fields were not correct and it differed between Safari and Chrome.
+ - Solution: Corrected by adding text-alignment in style.css.
+4. Hero-Header image fades out in different resolutions and looks bad.
+ - Solution: Created three versions of the Hero-Header image that changes depending on resolution.
+5. When tested in Lighthouse the website received a low score on performance, 72. The reason for this was that some images did not contain proper attributes for width and height.
+ - Solution: Added values for height and width to images and score increased to 98
+6. Poor performance on smaller screens. About Us and 2022 Events sections did not place them selfs properly.
+ - Solution: Solved this by using media queries and now the elements are displayed as they should.
+7. Menu not properly aligned with header on small screens and it gets cropped and divided.
+ - Solution: Added new values in the existing media queries.
+8. Menu still gets cropped on screens with resolutions below 320px. It looks good using Google DevTools but not on a physical device
+ - Solution: Solved 20220325 - Removed from Unfixed bugs. Changed View Port Width on fonts in menu.
+9. Images in the 2022 Events section are slightly out of alignment on low resolution screens.
+ - Solution: Solved 20220325 - Removed from Unfixed bugs. Changed View Port Width on fonts in menu. Changes to CSS under correct Media Query corrected this.
+
+Apart from these issues there have been several minor issues. The majority of these has been due to miss spelled tags, attributes and other misstakes. The first test in the W3C Validator pointed on 8 different things. 6 of them were connected to the Iframe used to display the Map from Google in the Contact section. The errors were easily corrected.
+
+
+
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official [W3C Validator]
+![W3C HTML Validator](/assets/images/html-validation.png)
+
+- CSS
+  - No errors were returned when passing through the official [(Jigsaw validator)]
+
+
+![Jigsaw validator](/assets/images/css-validator.png)
+
+
+
+### Unfixed Bugs
+
+All known bugs in this section has been moved to the section [Testing](#testing) with solution when they have been solved. Last known bug solved 2022-03-25. No more testing will be conducted now and the project will be submitted.
+
+ [Back to top](#nacka-tomato-society)
+
+## Development and Deployment
+
+The development environment used for this project was GitPod. To track the development stage and handle version control regular commits and pushes to GitHub has been conducted. The GitPod environment was created using a template provided by Code Institute.
+
+The live version of the project is deployed at GitHub pages.
+
+The procedure for deployment followed the "Creating your site" steps provided in [GitHub Docs.](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
+
+1. Log into GitHub.
+2. Locate the GitHub Repository that shall be deployed live.
+3. At the top of the repository, select Settings from the menu items.
+4. Scroll down the Settings page to the ”GitHub Pages" section and click on the ”Check it out here!”
+5. At the ”Source” section choose ”main” as Branch and root as folder and click ”Save”
+6. The website will deploy and the pages refreshes to provide the live link to the project.
+
+The live link can be found here - https://pelikantapeten.github.io/p1-nacka-tomato-society/
+
+## Content 
+
+- All text content on this site has been produced by the author of the project and is fictional. Individuals mentioned do not exist in real life and there is no Nacka Tomato Society.
+- The design of the project is inspired by Code Institutes ”Love Running” project. Code has been borrowed from that project, the Footer. It is commented in index.html and styles.css were the the borrowed code is applied. 
+- The icons in the header, contact and registration and footer were taken from [Font Awesome](https://fontawesome.com/)
+
+## Credits 
+
+Martina Terlevic
+ - My fantastic mentor at Code Institute
