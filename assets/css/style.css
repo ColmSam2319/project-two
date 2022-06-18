@@ -125,7 +125,6 @@ body {
 .btn--purple:hover {
     background-color: rgb(239, 123, 239);
     color: white;
-    text-decoration-color: aqua;
     transform: scale(1.2);
     
 }
