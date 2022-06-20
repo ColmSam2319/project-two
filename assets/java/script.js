@@ -8,7 +8,7 @@ const paper_div = document.getElementById ("paper");
 const scissors_div = document.getElementById ("scissors");
 const lizard_div = document.getElementById ("lizard");
 const spock_div = document.getElementById ("spock");
-const results_div = document.getElementById ('results')
+const results_div = document.getElementById ('results');
 let playerScore = 0;
 let computerScore = 0;
 
@@ -17,7 +17,7 @@ let computerScore = 0;
 function getComputerChoice(){
     const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock',];
     const randomNumber = Math.floor(Math.random()*choices.length);
-    return choices[randomNumber]
+    return choices[randomNumber];
 }
 (getComputerChoice());
 
@@ -76,7 +76,7 @@ function game(playerChoice){
                     draw(playerChoice, computerChoice);
                     break;             
     }
-    endGame()
+    endGame();
 }
 
 /*eventlisteners for the buttons*/
