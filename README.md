@@ -1,5 +1,6 @@
 # ROCK PAPER SCISSORS LIZARD SPOCK
 
+![website-image](/assets/images/website-image.png)
 
 # The purpose with this projec
 
@@ -9,7 +10,7 @@ Requirements for the project is that the website has to be static and responsive
 
 # Live website
 
-A live version of the project can be found here - 
+A live version of the project can be found here - https://colmsam2319.github.io/yogalife-project-one/
 
 # Table of contents
 + [UX](#ux "UX")
